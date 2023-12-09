@@ -29,6 +29,9 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 ## Evaluation Metrics
 
+### MIA(Member Inference Attack)
+
 | Paper Title                                                  | Key words               | Venue | Year    |
 | ------------------------------------------------------------ | ----------------------- | ----- | ------- |
 | [DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS](https://arxiv.org/abs/2310.16789) | pretrain data detection | arXiv | 2023.10 |
+| [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | finetune data detection | arXiv | 2023.11 |
