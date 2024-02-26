@@ -6,8 +6,9 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 ## Survey
 
-| Paper Title | Venue | Year |
-| ----------- | ----- | ---- |
+| Paper Title                                                 | Venue | Year    |
+| ----------------------------------------------------------- | ----- | ------- |
+| [Machine Unlearning of Pre-trained Large Language Models]() | arXiv | 2024.02 |
 
 
 
