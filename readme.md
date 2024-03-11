@@ -16,20 +16,21 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 
 
-## Approaches
+## Methods
 
-| Paper Title                                                  | Key words                  | Paper with codes                                  | Venue      | Time    |
-| ------------------------------------------------------------ | -------------------------- | ------------------------------------------------- | ---------- | ------- |
-| [Who’s Harry Potter? Approximate Unlearning in LLMs](https://arxiv.org/abs/2310.02238) | **Approximate Unlearning** | -                                                 | arXiv      | 2023.10 |
-| [DEPN: Detecting and Editing Privacy Neurons in Pretrained Language Models](https://arxiv.org/abs/2310.20138) | **Model Editing**          | -                                                 | EMNLP 2023 | 2023.10 |
-| [Unlearn What You Want to Forget: Efficient Unlearning for LLMs](https://arxiv.org/pdf/2310.20150v1.pdf) | **Adapter**                | https://github.com/SALT-NLP/Efficient_Unlearning/ | EMNLP 2023 | 2023.10 |
-| [Large Language Model Unlearning](https://arxiv.org/pdf/2310.10683.pdf) |                            | https://github.com/kevinyaobytedance/llm_unlearn  | ICLR 2024  | 2023.10 |
-
-
-
+| Paper Title                                                  | Key words                                  | Paper with codes                                  | Venue      | Time    |
+| ------------------------------------------------------------ | ------------------------------------------ | ------------------------------------------------- | ---------- | ------- |
+| [Who’s Harry Potter? Approximate Unlearning in LLMs](https://arxiv.org/abs/2310.02238) | **Approximate Unlearning**                 | -                                                 | arXiv      | 2023.10 |
+| [DEPN: Detecting and Editing Privacy Neurons in Pretrained Language Models](https://arxiv.org/abs/2310.20138) | **Model Editing**                          | -                                                 | EMNLP 2023 | 2023.10 |
+| [Unlearn What You Want to Forget: Efficient Unlearning for LLMs](https://arxiv.org/pdf/2310.20150v1.pdf) | **Adapter**                                | https://github.com/SALT-NLP/Efficient_Unlearning/ | EMNLP 2023 | 2023.10 |
+| [Large Language Model Unlearning](https://arxiv.org/pdf/2310.10683.pdf) |                                            | https://github.com/kevinyaobytedance/llm_unlearn  | ICLR 2024  | 2023.10 |
+| [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | **Using LLM Unlearning in Recommendation** | https://github.com/justarter/E2URec               | arXiv      | 2024.03 |
 
 
-## Evaluation Metrics
+
+
+
+## Evaluation
 
 ### MIA(Member Inference Attack)
 
@@ -37,3 +38,11 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | ------------------------------------------------------------ | ----------------------- | ----- | ------- |
 | [DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS](https://arxiv.org/abs/2310.16789) | pretrain data detection | arXiv | 2023.10 |
 | [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | finetune data detection | arXiv | 2023.11 |
+
+### Benchmarks
+
+| Paper Title                                                  | Key words | Venue | Year    |
+| ------------------------------------------------------------ | --------- | ----- | ------- |
+| [TOFU: A Task of Fictitious Unlearning for LLMs](https://arxiv.org/pdf/2401.06121.pdf) |           | arXiv | 2024.01 |
+| [Machine Unlearning of Pre-trained Large Language Models](https://arxiv.org/pdf/2402.15159.pdf) |           | arXiv | 2024.02 |
+
