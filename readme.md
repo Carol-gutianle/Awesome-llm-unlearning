@@ -2,30 +2,40 @@
 
 A collection of papers and resources about Machine Unlearning on LLMs.
 
+Another collection of Vision Language Models and Vision Generative models can be found [here](vlm.md).
+
+---
+
 Large language models (LLMs) have demonstrated remarkable capabilities across various tasks, but their training typically requires vast amounts of data, raising concerns in legal and ethical domains. Issues such as potential copyright disputes, data authenticity, and privacy concerns have been brought to the forefront. Machine unlearning offers a potential solution to these challenges, even though it presents new hurdles when applied to LLMs. In this repository, we aim to collect and organize surveys, datasets, approaches, and evaluation metrics pertaining to machine unlearning on LLMs, with the hope of providing valuable insights for researchers in this field.
 
 ## Survey
 
 | Paper Title                                                  | Venue | Year    |
 | ------------------------------------------------------------ | ----- | ------- |
-| [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)  | arXiv | 2024.02 |
-| [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/abs/2402.08787) | arXiv | 2024.02 |
-| [Machine Unlearning: Taxonomy, Metrics, Applications, Challenges, and Prospects](http://arxiv.org/abs/2403.08254) | arXiv| 2024.03|
+| [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)  | ArXiv | 2024.02 |
+| [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/abs/2402.08787) | ArXiv | 2024.02 |
+| [Machine Unlearning: Taxonomy, Metrics, Applications, Challenges, and Prospects](http://arxiv.org/abs/2403.08254) | ArXiv| 2024.03|
 
 ## Regulations
 
 * [The EU general data protection regulation (GDPR)](https://gdpr-info.eu/), 2017
-- 
+- [Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/), 2023
 
 ## Datasets
 
-|Name|Used By|
-|----|-------|
-|[Enron Email Dataset](https://www.cs.cmu.edu/~enron/)|[Wu et al.](https://aclanthology.org/2023.emnlp-main.174)|
-| [Training Data Extraction Challenge](https://github.com/google-research/lm-extraction-benchmark) | [Jang et al.](https://aclanthology.org/2023.acl-long.805), |
-| [Harry Potter book series dataset](https://huggingface.co/microsoft/Llama2-7b-WhoIsHarryPotter) | [Eldan et al.](http://arxiv.org/abs/2310.02238), [Shi et al.](http://arxiv.org/abs/2310.16789) |
-| [Real Toxicity Prompts](https://aclanthology.org/2020.findings-emnlp.301/)| [Lu et al.](http://arxiv.org/abs/2205.13636), [Liu et al.](https://arxiv.org/abs/2105.03023)  |
-| [TOFU](https://huggingface.co/datasets/locuslab/TOFU) | [Maini et al.](http://arxiv.org/abs/2401.06121)|
+|Name|Description|Used By|
+|----|-----|--|
+|[BBQ (Bias Benchmark for QA)](https://github.com/nyu-mll/BBQ)|a dataset of question sets constructed by the authors that highlight attested social biases against people belonging to protected classes along nine social dimensions relevant for U.S. English-speaking contexts. |[Zhao et al.](https://arxiv.org/abs/2312.12736), |
+|[HarmfulQA](https://huggingface.co/datasets/declare-lab/HarmfulQA)|a ChatGPT-distilled dataset constructed using the Chain of Utterances (CoU) prompt. |[Zhao et al.](https://arxiv.org/abs/2312.12736)|
+|[CategoricalHarmfulQA](https://huggingface.co/datasets/declare-lab/CategoricalHarmfulQA)| Thus, the dataset consists of 550 harmful questions, 55 such questions are shown in the table. | [Bhardwaj et al.](https://arxiv.org/pdf/2402.11746.pdf)|
+|[Pile](https://arxiv.org/abs/2101.00027)|an 825 GiB English text corpus targeted at training large-scale language models.|[Zhao et al.](https://arxiv.org/abs/2312.12736)|
+|[Detoxify](https://docs.unitary.ai/detoxify)|Detoxify is a simple, easy to use, python library to detect hateful or offensive language. It was built to help researchers and practitioners identify potential toxic comments.|[Zhao et al.](https://arxiv.org/abs/2312.12736)|
+|[Enron Email Dataset](https://www.cs.cmu.edu/~enron/)||[Wu et al.](https://aclanthology.org/2023.emnlp-main.174)|
+| [Training Data Extraction Challenge](https://github.com/google-research/lm-extraction-benchmark)| | [Jang et al.](https://aclanthology.org/2023.acl-long.805), |
+| [Harry Potter book series dataset](https://huggingface.co/microsoft/Llama2-7b-WhoIsHarryPotter)| | [Eldan et al.](http://arxiv.org/abs/2310.02238), [Shi et al.](http://arxiv.org/abs/2310.16789) |
+| [Real Toxicity Prompts](https://aclanthology.org/2020.findings-emnlp.301/)| |[Lu et al.](http://arxiv.org/abs/2205.13636), [Liu et al.](https://arxiv.org/abs/2105.03023)  |
+| [TOFU](https://huggingface.co/datasets/locuslab/TOFU) | |[Maini et al.](http://arxiv.org/abs/2401.06121)|
+| [WMDP](https://wmdp.ai) | |[Li et al.](https://arxiv.org/abs/2403.03218.pdf) |
 
 ## Methods
 
@@ -60,8 +70,11 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 | Paper Title | Author | Paper with code | Key words  | Venue | Time |
 | ------------| -------| -----------| -----------------| ------| -----|
+| [Learning and Forgetting Unsafe Examples in Large Language Models](https://arxiv.org/abs/2312.12736)|Zhao et al.|Fine-tuning based.| [No Code Available] | ArXiv| 2023-12|
 | [Second-Order Information Matters: Revisiting Machine Unlearning for Large Language Models](http://arxiv.org/abs/2403.10557)| Gu et al. | [No Code Available] |sequential editing of LLMs may compromise their general capabilities.| ArXiv | 2024-03|
-| [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | Wang et al. |  [Github](https://github.com/justarter/E2URec)                  |**Using LLM Unlearning in Recommendation** | ArXiv        | 2024.03 |
+| [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | Wang et al. |  [Github](https://github.com/justarter/E2URec)                  |**Using LLM Unlearning in Recommendation** | ArXiv        | 2024-03 |
+| [The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning](https://arxiv.org/abs/2403.03218.pdf) | Li et al. |They control the model towards having a novice-like level of hazardous knowledge, designed a loss function with a forget loss an a retrain loss. The forget loss bends the model representations towards those of a noive, while the retain loss limits the amount of general capabilities removed. |[Homepage](https://wmdp.ai) | ArXiv | 2024-03 | 
+
 
 ### Input-based method
 
@@ -80,15 +93,16 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 | Paper Title | Author | Paper with code |                                                  Key words               | Venue | Year    |
 | ------------|--------|---------------------------------------- | ----------------------- | ----- | ------- |
-| [Can Sensitive Information be Deleted from LLMS? Objectives for Defending Against Extration Attacks](http://arxiv.org/abs/2309.17410) |Patil et al. | [Github](https://github.com/Vaidehi99/InfoDeletionAttacks)| | arXiv| 2023.09 |
-| [Detecting Pretraining Data from Large Language Models](https://arxiv.org/abs/2310.16789) | Shi et al. | [Github](https://github.com/swj0419/detect-pretrain-code)| pretrain data detection | arXiv | 2023.10 |
-| [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | Fu et al. | [No Code Available] | finetune data detection | arXiv | 2023.11 |
+| [Can Sensitive Information be Deleted from LLMS? Objectives for Defending Against Extration Attacks](http://arxiv.org/abs/2309.17410) |Patil et al. | [Github](https://github.com/Vaidehi99/InfoDeletionAttacks)| | ArXiv| 2023.09 |
+| [Detecting Pretraining Data from Large Language Models](https://arxiv.org/abs/2310.16789) | Shi et al. | [Github](https://github.com/swj0419/detect-pretrain-code)| pretrain data detection | ArXiv | 2023.10 |
+| [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | Fu et al. | [No Code Available] | finetune data detection | ArXiv | 2023.11 |
 | [Tensor trust: Interpretable prompt injection attacks from an online game](https://arxiv.org/abs/2311.01011)|  Toyer et al. | [Github](https://github.com/HumanCompatibleAI/tensor-trust-data/tree/main) | input-based methods may not necessarily yield genuinely unlearned models, leading to weaker unlearning strategies compared to model-based methods because modifying the inputs of LLMs alone may not be sufficient to completely erase the influence of unlearning targets| ArXiv | 2023-11|
 
 ### Benchmarks
 
 | Paper Title| Author| Paper with code |                                                  Key words | Venue | Year    |
 | -----------|-------|------------------------------------------ | --------- | ----- | ------- |
-| [TOFU: A Task of Fictitious Unlearning for LLMs](https://arxiv.org/abs/2401.06121.pdf) |  Maini et al. |  [Homepage](https://locuslab.github.io/tofu/?utm_source=catalyzex.com)|        | arXiv | 2024.01 |
-| [Machine Unlearning of Pre-trained Large Language Models](https://arxiv.org/pdf/2402.15159.pdf) | Yao et al. | [Github](https://github.com/yaojin17/Unlearning_LLM?utm_source=catalyzex.com)|          | arXiv | 2024.02 |
-| [Eight Methods to Evaluate Robust Unlearning in LLMs](http://arxiv.org/abs/2402.16835) | Lynch et al. | [No Code Available] || arXiv | 2024.02 |
+| [TOFU: A Task of Fictitious Unlearning for LLMs](https://arxiv.org/abs/2401.06121.pdf) |  Maini et al. |  [Homepage](https://locuslab.github.io/tofu/?utm_source=catalyzex.com)|        | ArXiv | 2024.01 |
+| [Machine Unlearning of Pre-trained Large Language Models](https://arxiv.org/pdf/2402.15159.pdf) | Yao et al. | [Github](https://github.com/yaojin17/Unlearning_LLM?utm_source=catalyzex.com)|          | ArXiv | 2024.02 |
+| [Eight Methods to Evaluate Robust Unlearning in LLMs](http://arxiv.org/abs/2402.16835) | Lynch et al. | [No Code Available] || ArXiv | 2024.02 |
+| [The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning](https://arxiv.org/abs/2403.03218.pdf) | Li et al. | [Homepage](https://wmdp.ai) |Biology, Cyber and Chemical| ArXiv | 2024.03 | 
