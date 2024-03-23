@@ -1,8 +1,11 @@
 # Awesome VGM/VLM Unlearning
 
+[![Awesome](https://awesome.re/badge-flat.svg)](https://github.com/YuyangXueEd/Awesome-LLM-VLM-VGM-unlearning/blob/main/vlm.md)
+
 A collection of papers and resources about Machine Unlearning on Vision Generative Models (VGMs) and Vision Language Models (VLMs).
 
 Another collection of Vision Language Models and Vision Generative models can be found [here](readme.md).
+
 ---
 
 ## Background, Concerns, and Motivations
