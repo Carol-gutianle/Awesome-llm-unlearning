@@ -1,4 +1,4 @@
-# Awesome-llm-unlearning
+# Awesome LLM Unlearning
 
 A collection of papers and resources about Machine Unlearning on LLMs.
 
@@ -8,25 +8,67 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 | Paper Title                                                  | Venue | Year    |
 | ------------------------------------------------------------ | ----- | ------- |
-| [Machine Unlearning of Pre-trained Large Language Models]()  | arXiv | 2024.02 |
-| [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/pdf/2402.08787.pdf) | arXiv | 2024.02 |
+| [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)  | arXiv | 2024.02 |
+| [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/abs/2402.08787) | arXiv | 2024.02 |
+| [Machine Unlearning: Taxonomy, Metrics, Applications, Challenges, and Prospects](http://arxiv.org/abs/2403.08254) | arXiv| 2024.03|
 
+## Regulations
 
+* [The EU general data protection regulation (GDPR)](https://gdpr-info.eu/), 2017
+- 
 
 ## Datasets
 
-
+|Name|Used By|
+|----|-------|
+|[Enron Email Dataset](https://www.cs.cmu.edu/~enron/)|[Wu et al.](https://aclanthology.org/2023.emnlp-main.174)|
+| [Training Data Extraction Challenge](https://github.com/google-research/lm-extraction-benchmark) | [Jang et al.](https://aclanthology.org/2023.acl-long.805), |
+| [Harry Potter book series dataset](https://huggingface.co/microsoft/Llama2-7b-WhoIsHarryPotter) | [Eldan et al.](http://arxiv.org/abs/2310.02238), [Shi et al.](http://arxiv.org/abs/2310.16789) |
+| [Real Toxicity Prompts](https://aclanthology.org/2020.findings-emnlp.301/)| [Lu et al.](http://arxiv.org/abs/2205.13636), [Liu et al.](https://arxiv.org/abs/2105.03023)  |
+| [TOFU](https://huggingface.co/datasets/locuslab/TOFU) | [Maini et al.](http://arxiv.org/abs/2401.06121)|
 
 ## Methods
 
-| Paper Title                                                  | Key words                                  | Paper with codes                                     | Venue        | Time    |
-| ------------------------------------------------------------ | ------------------------------------------ | ---------------------------------------------------- | ------------ | ------- |
-| [Who’s Harry Potter? Approximate Unlearning in LLMs](https://arxiv.org/abs/2310.02238) | **Approximate Unlearning**                 | -                                                    | arXiv        | 2023.10 |
-| [DEPN: Detecting and Editing Privacy Neurons in Pretrained Language Models](https://arxiv.org/abs/2310.20138) | **Model Editing**                          | -                                                    | EMNLP 2023   | 2023.10 |
-| [Unlearn What You Want to Forget: Efficient Unlearning for LLMs](https://arxiv.org/pdf/2310.20150v1.pdf) | **Adapter**                                | https://github.com/SALT-NLP/Efficient_Unlearning/    | EMNLP 2023   | 2023.10 |
-| [Large Language Model Unlearning](https://arxiv.org/pdf/2310.10683.pdf) |                                            | https://github.com/kevinyaobytedance/llm_unlearn     | ICLR 2024    | 2023.10 |
-| [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | **Using LLM Unlearning in Recommendation** | https://github.com/justarter/E2URec                  | arXiv        | 2024.03 |
-| [Unlearning Bias in Language Models by Partitioning Gradients](https://aclanthology.org/2023.findings-acl.375.pdf) |                                            | https://github.com/CharlesYu2000/PCGU-UnlearningBias | ACL-Findings | 2023    |
+### Gradient-ascend and its variants
+
+| Paper Title | Author | Paper with code | Key words  | Venue | Time |
+| ------------| -------| -----------| -----------------| ------| -----|
+| [Composing Parameter-Efficient Modules with Arithmetic Operations](https://arxiv.org/abs/2306.14870) | Zhang et al. | [Github](https://github.com/hkust-nlp/PEM_composition) | use LoRA to create task vectors and accomplish unlearning by negating tasks under these task vectors. | NeurIPS 2023 | 2023-06|
+| [Knowledge Unlearning for Mitigating Privacy Risks in Language Models](https://aclanthology.org/2023.acl-long.805)| Jang et al. |  [Github](https://github.com/joeljang/knowledge-unlearning) |updating the model parameters by maximizing the likelihood of mis-prediction for the samples within the forget set $D_f$| ACL 2023 | 2023-07|
+|[Unlearning Bias in Language Models by Partitioning Gradients](https://aclanthology.org/2023.findings-acl.375) | Yu et al. | [Github](https://github.com/CharlesYu2000/PCGU-UnlearningBias) | aims to minimize the likelihood of predictions on relabeled forgetting data | ACL 2023 | 2023-07|
+| [Who’s Harry Potter? Approximate Unlearning in LLMs](https://arxiv.org/abs/2310.02238) | Eldan et al. | [HuggingFace](https://huggingface.co/microsoft/Llama2-7b-WhoIsHarryPotter) | descent-based fine-tuning, over relabeled or randomly labeled forgetting data, where generic translations are used to replace the unlearned texts.             | ICLR 2024        | 2023-10 |
+| [Unlearn What You Want to Forget: Efficient Unlearning for LLMs](https://aclanthology.org/2023.emnlp-main.738) | Chen and Yang | [Github](https://github.com/SALT-NLP/Efficient_Unlearning) |  fine-tune an adapter over the unlearning objective that acts as an unlearning layer within the LLM. | EMNLP | 2023-12 |
+| [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)| Yao et al. |  [Github](https://github.com/yaojin17/Unlearning_LLM) |incorporate random labeling to augment the unlearning objective and ensure utility preservation on the retain set $D_r$ | ArXiv | 2024-02 |
+
+
+### Localisation-informed unlearning
+
+| Paper Title | Author | Paper with code | Key words  | Venue | Time |
+| ------------| -------| -----------| -----------------| ------| -----|
+|[Locating and Editing Factual Associations in GPT](http://arxiv.org/abs/2202.05262)| Meng et al. | [Github](https://github.com/EleutherAI/knowledge-neurons)| the process of localization can be accomplished through representation denoising, also known as causal tracing, focusing on the unit of model layers.| ArXiv | 2022-02|
+|[Unlearning Bias in Language Models by Partitioning Gradients](https://aclanthology.org/2023.findings-acl.375) | Yu et al. | [Github](https://github.com/CharlesYu2000/PCGU-UnlearningBias) | gradient-based saliency is employed to identify the crucial weights that need to be fine-tuned to achieve the unlearning objective. | ACL 2023 | 2023-07|
+| [DEPN: Detecting and Editing Privacy Neurons in Pretrained Language Models](https://arxiv.org/abs/2310.20138) | Wu et al. | [Github](https://github.com/flamewei123/DEPN)|neurons that respond to unlearning targets are identified within the feed-forward network and subsequently selected for knowledge unlearning. | EMNLP 2023   | 2023-10 |
+| [Can Sensitive Information Be Deleted From LLMs? Objectives for Defending Against Extraction Attacks](http://arxiv.org/abs/2309.17410)| Patil et al. | [Github](https://github.com/Vaidehi99/InfoDeletionAttacks) | it is important to delete information about unlearning targets wherever it is represented in models in order to protect against attacks| ArXiv | 2023-09|
+
+### Influence function-based method
+
+| Paper Title | Author | Paper with code | Key words  | Venue | Time |
+| ------------| -------| -----------| -----------------| ------| -----|
+| [Studying Large Language Model Generalization with Influence Functions](http://arxiv.org/abs/2308.03296)| Grosse et al. | [No Code Avaialble] | the potential of influence functions in LLM unlearning may be underestimated, given that scalability issue, and approximation errors can be mitigated by focusing on localized weights that are salient to unlearning.| ArXiv | 2023-08|
+
+### Other model-based method
+
+| Paper Title | Author | Paper with code | Key words  | Venue | Time |
+| ------------| -------| -----------| -----------------| ------| -----|
+| [Second-Order Information Matters: Revisiting Machine Unlearning for Large Language Models](http://arxiv.org/abs/2403.10557)| Gu et al. | [No Code Available] |sequential editing of LLMs may compromise their general capabilities.| ArXiv | 2024-03|
+| [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | Wang et al. |  [Github](https://github.com/justarter/E2URec)                  |**Using LLM Unlearning in Recommendation** | ArXiv        | 2024.03 |
+
+### Input-based method
+
+| Paper Title | Author |  Paper with code |Key words |  Venue | Time |
+| ------------| -------| -----------| -----------------| ------| -----|
+| [Memory-assisted prompt editing to improve gpt-3 after deployment](https://arxiv.org/abs/2201.06009) | Madaan et al. | [Github](https://github.com/madaan/memprompt?utm_source=catalyzex.com)| have also shown promise in addressing the challenges posed by the restricted access to black-box LLMs and achieving parameter efficiency of LLM unlearning.| EMNLP 2022 | 2022-01|
+
 
 
 
@@ -34,17 +76,19 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 ## Evaluation
 
-### MIA(Member Inference Attack)
+### Attacking and Defending
 
-| Paper Title                                                  | Key words               | Venue | Year    |
-| ------------------------------------------------------------ | ----------------------- | ----- | ------- |
-| [DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS](https://arxiv.org/abs/2310.16789) | pretrain data detection | arXiv | 2023.10 |
-| [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | finetune data detection | arXiv | 2023.11 |
+| Paper Title | Author | Paper with code |                                                  Key words               | Venue | Year    |
+| ------------|--------|---------------------------------------- | ----------------------- | ----- | ------- |
+| [Can Sensitive Information be Deleted from LLMS? Objectives for Defending Against Extration Attacks](http://arxiv.org/abs/2309.17410) |Patil et al. | [Github](https://github.com/Vaidehi99/InfoDeletionAttacks)| | arXiv| 2023.09 |
+| [Detecting Pretraining Data from Large Language Models](https://arxiv.org/abs/2310.16789) | Shi et al. | [Github](https://github.com/swj0419/detect-pretrain-code)| pretrain data detection | arXiv | 2023.10 |
+| [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | Fu et al. | [No Code Available] | finetune data detection | arXiv | 2023.11 |
+| [Tensor trust: Interpretable prompt injection attacks from an online game](https://arxiv.org/abs/2311.01011)|  Toyer et al. | [Github](https://github.com/HumanCompatibleAI/tensor-trust-data/tree/main) | input-based methods may not necessarily yield genuinely unlearned models, leading to weaker unlearning strategies compared to model-based methods because modifying the inputs of LLMs alone may not be sufficient to completely erase the influence of unlearning targets| ArXiv | 2023-11|
 
 ### Benchmarks
 
-| Paper Title                                                  | Key words | Venue | Year    |
-| ------------------------------------------------------------ | --------- | ----- | ------- |
-| [TOFU: A Task of Fictitious Unlearning for LLMs](https://arxiv.org/pdf/2401.06121.pdf) |           | arXiv | 2024.01 |
-| [Machine Unlearning of Pre-trained Large Language Models](https://arxiv.org/pdf/2402.15159.pdf) |           | arXiv | 2024.02 |
-
+| Paper Title| Author| Paper with code |                                                  Key words | Venue | Year    |
+| -----------|-------|------------------------------------------ | --------- | ----- | ------- |
+| [TOFU: A Task of Fictitious Unlearning for LLMs](https://arxiv.org/abs/2401.06121.pdf) |  Maini et al. |  [Homepage](https://locuslab.github.io/tofu/?utm_source=catalyzex.com)|        | arXiv | 2024.01 |
+| [Machine Unlearning of Pre-trained Large Language Models](https://arxiv.org/pdf/2402.15159.pdf) | Yao et al. | [Github](https://github.com/yaojin17/Unlearning_LLM?utm_source=catalyzex.com)|          | arXiv | 2024.02 |
+| [Eight Methods to Evaluate Robust Unlearning in LLMs](http://arxiv.org/abs/2402.16835) | Lynch et al. | [No Code Available] || arXiv | 2024.02 |
