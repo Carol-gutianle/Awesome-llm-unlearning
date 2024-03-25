@@ -14,6 +14,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 | Paper Title                                                  | Venue | Year    |
 | ------------------------------------------------------------ | ----- | ------- |
+|[Knowledge unlearning for LLMs: Tasks, methods, and challenges](http://arxiv.org/abs/2311.15766)| ArXiv |2023.11|
 | [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)  | ArXiv | 2024.02 |
 | [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/abs/2402.08787) | ArXiv | 2024.02 |
 | [Machine Unlearning: Taxonomy, Metrics, Applications, Challenges, and Prospects](http://arxiv.org/abs/2403.08254) | ArXiv| 2024.03|
@@ -72,7 +73,8 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 | Paper Title | Author | Paper with code | Key words  | Venue | Time |
 | ------------| -------| -----------| -----------------| ------| -----|
-| [Learning and Forgetting Unsafe Examples in Large Language Models](https://arxiv.org/abs/2312.12736)|Zhao et al.|Fine-tuning based.| [No Code Available] | ArXiv| 2023-12|
+| [Can Sensitive Information Be Deleted From LLMs? Objectives for Defending Against Extraction Attacks](http://arxiv.org/abs/2309.17410) | Hase et al. | [Github](https://github.com/Vaidehi99/InfoDeletionAttacks?utm_source=catalyzex.com)|Defending attacks.|ICLR 2024|2023-09|
+| [Learning and Forgetting Unsafe Examples in Large Language Models](https://arxiv.org/abs/2312.12736)|Zhao et al.|[No Code Available] |Fine-tuning based.|  ArXiv| 2023-12|
 | [Second-Order Information Matters: Revisiting Machine Unlearning for Large Language Models](http://arxiv.org/abs/2403.10557)| Gu et al. | [No Code Available] |sequential editing of LLMs may compromise their general capabilities.| ArXiv | 2024-03|
 | [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | Wang et al. |  [Github](https://github.com/justarter/E2URec)                  |**Using LLM Unlearning in Recommendation** | ArXiv        | 2024-03 |
 | [The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning](https://arxiv.org/abs/2403.03218.pdf) | Li et al. |They control the model towards having a novice-like level of hazardous knowledge, designed a loss function with a forget loss an a retrain loss. The forget loss bends the model representations towards those of a noive, while the retain loss limits the amount of general capabilities removed. |[Homepage](https://wmdp.ai) | ArXiv | 2024-03 | 
@@ -83,6 +85,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | Paper Title | Author |  Paper with code |Key words |  Venue | Time |
 | ------------| -------| -----------| -----------------| ------| -----|
 | [Memory-assisted prompt editing to improve gpt-3 after deployment](https://arxiv.org/abs/2201.06009) | Madaan et al. | [Github](https://github.com/madaan/memprompt?utm_source=catalyzex.com)| have also shown promise in addressing the challenges posed by the restricted access to black-box LLMs and achieving parameter efficiency of LLM unlearning.| EMNLP 2022 | 2022-01|
+|[Alignment Studio: Aligning Large Language Models to Particular Contextual Regulations](https://arxiv.org/abs/2403.09704)| Achintalwar et al.|[No Code Available]()|aligning a company's internal-facing enterprise chatbot to its business conduct guidelines|ArXiv| 2024-03|
 
 
 

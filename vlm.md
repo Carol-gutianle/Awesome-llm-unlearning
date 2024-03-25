@@ -18,7 +18,7 @@ Another collection of Vision Language Models and Vision Generative models can be
 ### Harmful Generation, 
 
 - [Safe Latent Diffusion: Mitigating Inappropriate Degeneration in Diffusion Models](https://arxiv.org/abs/2211.05105), Schramowski et al., **Safe Latent Diffusion**, [Code](https://github.com/ml-research/safe-latent-diffusion), CVPR 2023, 2022-11
-- 
+- [Discovering Universal Semantic Triggers for Text-to-Image Synthesis](https://arxiv.org/abs/2402.07562), Zhai et al., **Universal Semantic Triggers**, ArXiv, 2024-02, [No Code Available]()
 
 ### Copyright Infringement
 
@@ -48,7 +48,7 @@ Another collection of Vision Language Models and Vision Generative models can be
 - [Safe Latent Diffusion: Mitigating Inappropriate Degeneration in Diffusion Models](https://arxiv.org/abs/2211.05105), Schramowski et al., **Safe Latent Diffusion**, [Code](https://github.com/ml-research/safe-latent-diffusion), CVPR 2023, 2022-11
 - [Removing Undesirable Concepts in Text-to-Image Generative Models with Learnable Prompts](https://arxiv.org/abs/2403.12326), Bui et al., **Learnable Prompts**, ArXiv, 2024-03
 - [Forgedit: Text-guided Image Editing via Learning and Forgetting](https://arxiv.org/abs/2309.10556v2), Zhang et al., **Latent vector substraction, projection and editing**, [Code](https://github.com/witcherofresearch/Forgedit?utm_source=catalyzex.com), ArXiv, 2023-09
-
+- [Prompting4Debugging: Red-Teaming Text-to-Image Diffusion Models by Finding Problematic Prompts](https://arxiv.org/abs/2309.06135), Chin et al., **Finding problematic prompts**, [No Code Available]()
 
 
 ### Weight Engineering
@@ -80,10 +80,13 @@ Another collection of Vision Language Models and Vision Generative models can be
 ## Dataset
 
 ### Text-Image
-
+- [Conceptual 12M](https://github.com/google-research-datasets/conceptual-12m), Changpinyo et al., CVPR 2021, 2021-09
+- [COYO](https://github.com/kakaobrain/coyo-dataset), kakaobrain, **COYO**, ArXiv, 2022-08
 - [LAION-5B: An open large-scale dataset for training next generation image-text models](https://arxiv.org/abs/2210.08402), Schuhmann et al, **LAION-5B**, NeurIPS 2022, 2022-10
-
-
+- [Inappropriate Image Prompts (I2P)](https://huggingface.co/datasets/AIML-TUDA/i2p), schramowski et al., **I2P**, CVPR 2023, 2023-01
+- [ConceptBench](), Zhang et al., **ConceptBench**, ArXiv, 2023-03
+- [UnlearnCanvas](), Zhang et al., **UnlearnCanvas**, ArXiv, 2024-03
+- 
 ## Evaluation
 
 ### General 
