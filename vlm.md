@@ -46,9 +46,10 @@ Another collection of Vision Language Models and Vision Generative models can be
 
 ### Prompt Engineering
 - [Safe Latent Diffusion: Mitigating Inappropriate Degeneration in Diffusion Models](https://arxiv.org/abs/2211.05105), Schramowski et al., **Safe Latent Diffusion**, [Code](https://github.com/ml-research/safe-latent-diffusion), CVPR 2023, 2022-11
-- [Removing Undesirable Concepts in Text-to-Image Generative Models with Learnable Prompts](https://arxiv.org/abs/2403.12326), Bui et al., **Learnable Prompts**, ArXiv, 2024-03
 - [Forgedit: Text-guided Image Editing via Learning and Forgetting](https://arxiv.org/abs/2309.10556v2), Zhang et al., **Latent vector substraction, projection and editing**, [Code](https://github.com/witcherofresearch/Forgedit?utm_source=catalyzex.com), ArXiv, 2023-09
-- [Prompting4Debugging: Red-Teaming Text-to-Image Diffusion Models by Finding Problematic Prompts](https://arxiv.org/abs/2309.06135), Chin et al., **Finding problematic prompts**, [No Code Available]()
+- [Prompting4Debugging: Red-Teaming Text-to-Image Diffusion Models by Finding Problematic Prompts](https://arxiv.org/abs/2309.06135), Chin et al., **Finding problematic prompts**, [No Code Available](), ArXiv, 2023-09
+- [Prompt-Specific Poisoning Attacks on Text-to-Image Generative Models](https://arxiv.org/abs/2310.13828), Shan et al., **Nightshade, an optimized prompt-specific poisoning attack**, ArXiv, 2023-10
+- [Removing Undesirable Concepts in Text-to-Image Generative Models with Learnable Prompts](https://arxiv.org/abs/2403.12326), Bui et al., **Learnable Prompts**, ArXiv, 2024-03
 
 
 ### Weight Engineering

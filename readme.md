@@ -18,6 +18,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)  | ArXiv | 2024.02 |
 | [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/abs/2402.08787) | ArXiv | 2024.02 |
 | [Machine Unlearning: Taxonomy, Metrics, Applications, Challenges, and Prospects](http://arxiv.org/abs/2403.08254) | ArXiv| 2024.03|
+| [The Frontier of Data Erasure: Machine Unlearning for Large Language Models](https://arxiv.org/abs/2403.15779)| ArXiv| 2024.03|
 
 ## Regulations
 
