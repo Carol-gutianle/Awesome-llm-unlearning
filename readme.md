@@ -24,6 +24,10 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 * [The EU general data protection regulation (GDPR)](https://gdpr-info.eu/), 2017
 - [Executive Order on the Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence](https://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/), 2023
 
+### Privacy Concerns
+
+- [Scalable Extraction of Training Data from (Production) Language Models](https://arxiv.org/abs/2311.17035), Nasr et al., 2023
+
 ## Datasets
 
 |Name|Description|Used By|
