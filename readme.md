@@ -8,12 +8,10 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 
 | Paper Title                                                  | Venue | Year    |
 | ------------------------------------------------------------ | ----- | ------- |
+| [Right to be Forgotten in the Era of Large Language Models: Implications, Challenges and Solutions](https://arxiv.org/abs/2307.03941) | arXiv | 2023.07 |
+| [Knowledge Unlearning for LLMs: Tasks, Methods, and Challenges](https://arxiv.org/pdf/2311.15766.pdf) | arXiv | 2023.11 |
 | [Machine Unlearning of Pre-trained Large Language Models]()  | arXiv | 2024.02 |
 | [Rethinking Machine Unlearning for Large Language Models](https://arxiv.org/pdf/2402.08787.pdf) | arXiv | 2024.02 |
-
-
-
-## Datasets
 
 
 
@@ -26,9 +24,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | [Unlearn What You Want to Forget: Efficient Unlearning for LLMs](https://arxiv.org/pdf/2310.20150v1.pdf) | **Adapter**                                | https://github.com/SALT-NLP/Efficient_Unlearning/    | EMNLP 2023   | 2023.10 |
 | [Large Language Model Unlearning](https://arxiv.org/pdf/2310.10683.pdf) |                                            | https://github.com/kevinyaobytedance/llm_unlearn     | ICLR 2024    | 2023.10 |
 | [Towards Efficient and Effective Unlearning of Large Language Models for Recommendation](https://arxiv.org/pdf/2403.03536.pdf) | **Using LLM Unlearning in Recommendation** | https://github.com/justarter/E2URec                  | arXiv        | 2024.03 |
-| [Unlearning Bias in Language Models by Partitioning Gradients](https://aclanthology.org/2023.findings-acl.375.pdf) |                                            | https://github.com/CharlesYu2000/PCGU-UnlearningBias | ACL-Findings | 2023    |
-
-
+| [Unlearning Bias in Language Models by Partitioning Gradients](https://aclanthology.org/2023.findings-acl.375.pdf) | MLMs Unlearning                            | https://github.com/CharlesYu2000/PCGU-UnlearningBias | ACL-Findings | 2023    |
 
 
 
@@ -41,7 +37,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | [DETECTING PRETRAINING DATA FROM LARGE LANGUAGE MODELS](https://arxiv.org/abs/2310.16789) | pretrain data detection | arXiv | 2023.10 |
 | [Practical Membership Inference Attacks against Fine-tuned Large Language Models via Self-prompt Calibration](https://arxiv.org/abs/2311.06062) | finetune data detection | arXiv | 2023.11 |
 
-### Benchmarks
+### Benchmarks & Datasets
 
 | Paper Title                                                  | Key words | Venue | Year    |
 | ------------------------------------------------------------ | --------- | ----- | ------- |
