@@ -59,7 +59,7 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | [Machine Unlearning of Pre-trained Large Language Models](http://arxiv.org/abs/2402.15159)| Yao et al. |  [Github](https://github.com/yaojin17/Unlearning_LLM) |incorporate random labeling to augment the unlearning objective and ensure utility preservation on the retain set $D_r$ | ArXiv | 2024-02 |
 
 
-### Localisation-informed unlearning
+### Localization-informed unlearning
 
 | Paper Title | Author | Paper with code | Key words  | Venue | Time |
 | ------------| -------| -----------| -----------------| ------| -----|
@@ -91,11 +91,13 @@ Large language models (LLMs) have demonstrated remarkable capabilities across va
 | ------------| -------| -----------| -----------------| ------| -----|
 | [Memory-assisted prompt editing to improve gpt-3 after deployment](https://arxiv.org/abs/2201.06009) | Madaan et al. | [Github](https://github.com/madaan/memprompt?utm_source=catalyzex.com)| have also shown promise in addressing the challenges posed by the restricted access to black-box LLMs and achieving parameter efficiency of LLM unlearning.| EMNLP 2022 | 2022-01|
 |[Alignment Studio: Aligning Large Language Models to Particular Contextual Regulations](https://arxiv.org/abs/2403.09704)| Achintalwar et al.|[No Code Available]()|aligning a company's internal-facing enterprise chatbot to its business conduct guidelines|ArXiv| 2024-03|
+|[Large Language Model Unlearning via Embedding-Corrupted Prompts](https://arxiv.org/pdf/2406.07933)| Chris Yuhao Liu et al. |No Code Available|enforce an unlearned state during inference by employing a prompt classifier to identify and safeguard prompts to forget.|ArXiv| 2024-06 |
 
+### Output-based method
 
-
-
-
+| Paper Title                                                  | Author           | Paper with code | Key words                                                    | Venue | Time    |
+| ------------------------------------------------------------ | ---------------- | --------------- | ------------------------------------------------------------ | ----- | ------- |
+| Reversing the Forget-Retain Objectives: An Efficient LLM Unlearning Framework from Logit Difference | Jiabao Ji et al. |                 | introduce an assistant LLM that aims to achieve the opposite of the unlearning goals, and then derives the unlearned LLM by computing the logit difference between the target and the assistant LLMs. | ArXiv | 2024-06 |
 
 ## Evaluation
 
